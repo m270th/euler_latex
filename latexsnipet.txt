@@ -1,0 +1,42 @@
+{
+	// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Answer of Question":{
+		"prefix": "answer",
+		"body": [
+			"\\[\\uline{答. \\quad",
+			"  ${1}",
+			"\\}\\]",
+		],
+		"description": "問題の解答を書く際の一行"
+	},
+	"My fbox": {
+		"prefix": "myfbox",
+		"body": [
+			"\\fbox{　　}"
+		],
+		"description": "空欄ボックスを全角2文字で出力"
+	},
+	"MyUnit 円": {
+		"prefix": "yen",
+		"body": "円",
+		"description": "単位シリーズ　円"
+	},
+	"MyUnit 速さ": {
+		"prefix": "myuspeed",
+		"body": "\\mathrm{${1|km/時,m/分,m/秒,km,m,時間,分,秒|}}",
+		"description": "単位シリーズ"
+	},
+}
